@@ -1,0 +1,22 @@
+{
+  "name": "json-schema-compiler",
+  "version": "0.0.1",
+  "description": "JSON Schema compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epoberezkin/json-schema-compiler.git"
+  },
+  "author": "Evgeny Poberezkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epoberezkin/json-schema-compiler/issues"
+  },
+  "homepage": "https://github.com/epoberezkin/json-schema-compiler#readme",
+  "devDependencies": {
+    "lerna": "^2.0.0"
+  }
+}

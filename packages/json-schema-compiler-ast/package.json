@@ -1,0 +1,44 @@
+{
+  "name": "json-schema-compiler-ast",
+  "version": "0.0.1",
+  "description": "JSON Schema compiler to AST",
+  "main": "src/index.js",
+  "scripts": {
+    "test-spec": "mocha test/*.js -R spec",
+    "test-cov": "nyc npm run test-spec",
+    "test": "npm run test-cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epoberezkin/json-schema-compiler.git"
+  },
+  "keywords": [
+    "JSON-Schema",
+    "compiler",
+    "AST"
+  ],
+  "author": "Evgeny Poberezkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epoberezkin/json-schema-compiler/issues"
+  },
+  "homepage": "https://github.com/epoberezkin/json-schema-compiler#readme",
+  "dependencies": {
+    "ast-types": "^0.9.12"
+  },
+  "devDependencies": {
+    "astring": "^1.0.5",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0"
+  },
+  "nyc": {
+    "exclude": [
+      "**/test/**",
+      "node_modules"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  }
+}
